@@ -1,90 +1,85 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    font-family: 'Open Sans', sans-serif;
 }
+
 body {
-    height: 100vh;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(21, 233, 180);
-    background-image: url("https://images.ecycle.com.br/wp-content/uploads/2022/12/17170822/mata-atlantica-tucano.jpg.webp");
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
 }
 
-.caixa_maior {
-    background: #1f1d1d;
+.caixa-maior {
+    background-color: #000000;
+    width: 95%; 
+    max-width: 420px; 
     opacity: 0.8;
-    border-radius: 10px;
     padding: 20px;
-    width: 95%;
-    max-width: 450px;
+    border-radius: 25px;
 }
 
-.input-cidade {
-    border: none;
-    outline:none;
-    padding: 10px;
-    border-radius: 25px; 
-    font-size: 25xp;
-    background-color: darkslategray;
-    color: rgb(250, 239, 239);
-    width: calc(100% - 50px);
+input {
+    border: none;/* borda do elemento */
+    outline: none;/* borda quando seleciona o elemento */
+    padding: 10px;/* espaçamento interno */
+    border-radius: 24px;/* arredonda as bordas */
+    font-size: 20px;
+    background-color: #7c7c7c2b;
+    color: #ffffff;
+    width: calc( 100% - 100px);
 }
 
-.botao-busca {
+button {
     border: none;
     outline: none;
     padding: 10px;
     border-radius: 50px;
-    background-color: rgb(135, 167, 167);
-    cursor: pointer;
+    background-color: #7c7c7c2b;
     float: right;
+    cursor: pointer;
 }
 
-.img-busca {
-    width: 22px;
-    
+button:hover {
+    background-color: #7c7c7c6b;
 }
 
 .caixa-media {
     margin-top: 30px;
-
 }
 
 .caixa-menor {
     display: flex;
+    margin-top: 30px;
     align-items: center;
-    margin-top: 20px;
 }
 
-.cidade {
-    color: aliceblue;
-    font-size: 23px;
-    font-weight: 300;
+.lupa {
+    height: 20px;
 }
 
-.tempo {
-    font-size: 20px;
-    color: aliceblue;
-    margin-top: 20px;
-
+h2 {
+    color: white;
+    font-size: 28px; /* tamanho do texto */
 }
 
-.img-previsao {
-
+.temp {
+    color: #ffffff;
+    margin-top: 30px;
+    font-size: 30px;
 }
 
-.texto {
-    color: aliceblue;
+.texto-previsao {
+    color: #ffffff;
     margin-left: 20px;
-
+    text-transform: capitalize; /* Deixa a primeira letra maiuscula*/
 }
 
 .umidade {
-    color: aliceblue;
-    margin-top: 10px;
+    color: #ffffff;
+    margin-top: 30px;
 }
